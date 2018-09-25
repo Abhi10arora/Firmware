@@ -1,6 +1,6 @@
 ############################################################################
 #
-#   Copyright (c) 2016 PX4 Development Team. All rights reserved.
+#   Copyright (c) 2018 PX4 Development Team. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -30,20 +30,5 @@
 # POSSIBILITY OF SUCH DAMAGE.
 #
 ############################################################################
-px4_add_module(
-	MODULE drivers__mpu9250
-	MAIN mpu9250
-	STACK_MAIN 1500
-	COMPILE_FLAGS
-	SRCS
-		mpu9250.cpp
-		mpu9250_i2c.cpp
-		mpu9250_spi.cpp
-		main.cpp
-		gyro.cpp
-		mag.cpp
-		mag_i2c.cpp
-	DEPENDS
-		drivers_accel
-	)
 
+px4_add_library(drivers_accel accel.cpp)

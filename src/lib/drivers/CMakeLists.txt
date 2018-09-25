@@ -31,6 +31,7 @@
 #
 ############################################################################
 
+add_subdirectory(accelerometer)
 add_subdirectory(airspeed)
 add_subdirectory(device)
 add_subdirectory(led)

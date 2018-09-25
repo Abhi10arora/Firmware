@@ -40,4 +40,5 @@ px4_add_module(
 		accelsim.cpp
 	DEPENDS
 		modules__simulator
+		drivers_accel
 	)
